@@ -1,0 +1,80 @@
+.tarifCard{
+    margin: 1px;
+    height: 50vh;
+    width: 15vw;
+}
+
+.tarifCard__big{
+    height: auto;
+    box-shadow:0 0 10px rgba(128, 128, 128, 0.596);
+}
+
+.tarifCard_header{
+    margin:1px;
+    width: 15vw;
+    height: 7vh;
+    text-align: center;
+    padding-top: 3vh;
+    color: white;
+}
+
+.tarifCard_header__blue{
+    background-color:rgb(6, 122, 143);
+}
+
+.tarifCard_header__green{
+    background-color:rgb(11, 107, 62);
+}
+
+.tarifCard_header__red{
+    height: 8.5vh;
+    padding-top: 4vh;
+    background-color:rgb(155, 73, 35);
+}
+
+.tarifCard_header__black{
+    background-color:rgb(6, 21, 24);
+}
+
+.tarifCard_price{
+    height: 15vh;
+    text-align: center;
+    padding-top: 5vh;
+    font-size: 3em;
+    color:white;
+}
+
+sup,sub{
+    font-size: small;
+}
+
+.tarifCard_price__blue{
+    background-color:rgb(9, 169, 180);
+}
+
+.tarifCard_price__green{
+    background-color:rgb(9, 180, 129);
+}
+
+.tarifCard_price__red{
+    background-color:rgb(212, 104, 62);
+}
+
+.tarifCard_price__black{
+    background-color:rgb(29, 37, 37);
+}
+
+.tarifCard_speed{
+    margin: 1px;
+    padding-top: 2vh;
+    height: 5vh;
+    font-size: 0.85em;
+    background-color:rgb(241, 241, 241);
+}
+
+.tarifCard_footer{
+    padding-top: 1.5vh;
+    height: 7vh;
+    font-size: 0.7em;
+    background-color:rgb(241, 241, 241);
+}
