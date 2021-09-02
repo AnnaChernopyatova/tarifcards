@@ -1,13 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './styles/tarif.css'
 //import * as classnames from 'classnames';
 
 function Tarif (props) {
+    const [chosen, setChosen] = useState(props.chosen || false);
+
+    const handleChange = () =>{
+        setChosen(!chosen);
+    }
+
     return (
     props.tarif.map((tarif => {
         return (
-            <div className={'tarifCard ' + (tarif.price === 550 ?
-            'tarifCard__big' : '' ) }>
+            <div className={'tarifCard ' + (chosen &&
+            'tarifCard__big') }  onClick={handleChange}>
                 <div className={'tarifCard_header ' + (tarif.price === 300 &&
             'tarifCard_header__blue' || tarif.price === 450 &&
             'tarifCard_header__green' || tarif.price === 550 &&
@@ -29,6 +35,7 @@ function Tarif (props) {
                     Объем включенного траффика не играничен
                 </div>
             </div>
+            
         )
     })) 
     )

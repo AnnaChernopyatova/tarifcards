@@ -5,7 +5,7 @@
 }
 
 .tarifCard__big {
-  height: auto;
+  height: 53vh;
   -webkit-box-shadow: 0 0 10px rgba(128, 128, 128, 0.596);
           box-shadow: 0 0 10px rgba(128, 128, 128, 0.596);
 }
@@ -28,8 +28,6 @@
 }
 
 .tarifCard_header__red {
-  height: 8.5vh;
-  padding-top: 4vh;
   background-color: #9b4923;
 }
 
