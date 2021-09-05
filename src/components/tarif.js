@@ -3,17 +3,13 @@ import styles from './styles/tarif.css'
 //import * as classnames from 'classnames';
 
 function Tarif (props) {
-    const [chosen, setChosen] = useState(props.chosen || false);
-
-    const handleChange = () =>{
-        setChosen(!chosen);
-    }
+    
 
     return (
     props.tarif.map((tarif => {
         return (
-            <div className={'tarifCard ' + (chosen &&
-            'tarifCard__big') }  onClick={handleChange}>
+            <div className={'tarifCard ' + (tarif.chosen &&
+            'tarifCard__big') }  onClick={props.handleChange}>
                 <div className={'tarifCard_header ' + (tarif.price === 300 &&
             'tarifCard_header__blue' || tarif.price === 450 &&
             'tarifCard_header__green' || tarif.price === 550 &&

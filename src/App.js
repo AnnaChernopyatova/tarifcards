@@ -1,5 +1,5 @@
 import './App.css';
-import Tarif from './components/tarif';
+import TarifRow from './components/tarifRow';
 
 let tarif = [
   {
@@ -28,7 +28,7 @@ let tarif = [
 function App() {
   return (
     <div className="App">
-      <Tarif tarif = {tarif} ></Tarif>
+      <TarifRow tarif = {tarif} ></TarifRow>
     </div>
   );
 }
